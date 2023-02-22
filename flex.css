@@ -1,0 +1,22 @@
+.flex>div{
+    /*display: flex;*/
+    flex-direction: row;
+    background-color: #ca3a3a;
+    width: 75px;
+    margin: 10px;
+    text-align:center;
+    line-height: 55px;
+    font-size: 30px;
+}
+.flex{
+    background-color: DodgerBlue;
+    height:100px;
+    width: 100%;
+    align-content: center;
+    background-color: DodgerBlue;
+    justify-content: space-around;
+    align-items:center;
+    display: flex;
+    flex-wrap: wrap ;
+    background-color: DodgerBlue;
+}

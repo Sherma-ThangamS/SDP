@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+     <head>
+    <link rel="stylesheet" href="c.css">
+    
+    
+     </head>
+    <body>
+
+        <h1>
+            Calculation
+        </h1>
+        <p>
+        <p1>
+            <button onclick="fun()">Addition</button>
+            <button onclick="sub()">Subtraction</button>
+            <button onclick="mul()">Multiplication</button>
+            <button onclick="div()">Division</button>
+            <p id="result">
+               Welcome
+            
+        </p1>
+        </p>
+        <script>
+            function fun(){
+                var a = parseInt(window.prompt("Enter a number "));
+                var b=parseInt(window.prompt("Enter a another number "));
+                document.getElementById("result").innerHTML="Your answer is "+(a+b);
+            }
+            function sub(){
+                var a = parseInt(window.prompt("Enter a number "));
+                var b=parseInt(window.prompt("Enter a another number "));
+                document.getElementById("result").innerHTML="Your answer is "+(a-b);
+            }
+            function mul(){
+                var a = parseInt(window.prompt("Enter a number "));
+                var b=parseInt(window.prompt("Enter a another number "));
+                document.getElementById("result").innerHTML="Your answer is "+(a*b);
+            }
+            function div(){
+                var a = parseInt(window.prompt("Enter a number "));
+                var b=parseInt(window.prompt("Enter a another number "));
+                document.getElementById("result").innerHTML="Your answer is "+(a/b);
+            }
+        </script>
+        </p>
+    </body>
+</html>
