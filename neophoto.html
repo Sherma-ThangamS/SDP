@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography images</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+
+    <div class="container">
+        <h1 id="titleName"> NEO PHOTOGRAPHY</h1>
+        <h2 id="titleDescription">Beautiful Commercial Photography</h2>
+        <a onclick="myFunction()" id="viewWork">View Work</a>
+    </div>
+    <div id="images">
+    <div class="image">
+        <img src="./1.png" alt="pic1" id="backGroundImage" >
+    </div>
+    <div class="image">
+        <h3 id="ourWork"> Our Work</h3>
+        <img src="./1.png" alt="pic2" id="firstImage" >
+    </div>
+    <div class="image">
+        <img src="./1.png" alt="pic3" id="secondImage"><p id="firstImageName"> Food Photography </p>
+        
+    </div>
+    <div class="image">
+        <img src="./1.png" alt="pic4" id="thirdImage">
+        <p id="secondImageName">Aerial Photography</p>
+    </div>
+    <div class="image">
+        <img src="./1.png" alt="pic5" id="fourthImage">
+        <p id="thirdImageName">Abstract Photography</p>
+    </div>
+</div>
+</div>
+
+</body>
+<script>
+    function myFunction(){
+        var x = document.getElementById("images");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</html>

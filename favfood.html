@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Food</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 140px;
+        left: 250px;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+      }
+	      p{
+        color: white;
+        text-align: center;
+      }
+      .food_image {
+        width: 50%;
+        height: 50%;
+      }
+
+      img {
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      span {
+        padding-left: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div style="background-color: powderblue" class="food_image">
+          <img
+            id="titleImage"
+            src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
+            alt="pic3"
+          />
+          <h1 id="titleName">I Love Foods !!</h1>
+        </div>
+        <div style="background-color: yellow" class="food_image">
+          <h3 id="favFood1">Vegetables</h3>
+          <p id="foodDescription1">Lots of vegetables keeps you healthy</p>
+          <img id="favFoodImage1"
+            src="https://www.foodiesfeed.com/wp-content/uploads/2021/05/avocado-tree.jpg"
+            alt="pic2"
+          />
+        </div>
+        <div style="background-color: purple" class="food_image">
+          <h3 id="favFood2">EVENING FRIES</h3>
+          <p id="foodDescription2">Prepare your own food</p>
+          <img id="favFoodImage2"
+            src="https://www.foodiesfeed.com/wp-content/uploads/2021/05/forest-fruit-waffle.jpg"
+            alt="pic1"
+          />
+        </div>
+        <div style="background-color: red" class="food_image">
+          <h3 id="favFood3">SHAWARMA</h3>
+          <p id="foodDescription3">Cheat and eat</p>
+          <img id="favFoodImage3"
+            src="https://www.foodiesfeed.com/wp-content/uploads/2021/05/coffee-love-tornado.jpg"
+            alt="pic4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("images");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</html>vvvvvvvvvvvvvvv

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pages</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Pages</title>
+        <style>
+            body{text-align:center;}
+            table, th, td {border: 1px solid black; align:center;}
+            .center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #list-1{display: inline-block;text-align: left;}
+        </style>
+    </head>
+    <body>
+      <div style="background-color:rgb(221, 173, 230)">
+        <h2 id="heading">Navigate To Different Web Pages</h2><br>
+        <a id="login" href="#login-form">LOGIN</a><br>
+        <br>
+        <a id="table" href="#table-1">TABLE</a><br>
+        <br>
+        <a id="about" href="#about-heading">ABOUT</a>
+      </div>
+      <div style="background-color:rgb(221, 173, 230)">
+        <h4>Registration</h4><br>
+        <form id="login-form">
+            <label>Name :</label>
+            <input type="text" id="fname"><br>
+            <label>Password :</label>
+            <input type="text"><br>
+            <label>Email :</label>
+            <input type="text"><br>
+            <label for="courses">Courses :</label>
+            <select name="Courses" id="course">
+              <option value="Computer Science">Computer Science</option>
+              <option value="IT">IT</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="AI">AI</option>
+            </select><br>
+            <label for="Address">Address :</label>
+            <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+            <label for="Country">Country :</label>
+            <input list="Countries" name="Countries" id="Country">
+            <datalist id="Countries">
+              <option value="India">
+              <option value="Sri Lanka">
+              <option value="England">
+              <option value="Germany">
+              <option value="US">
+            </datalist><br>
+            <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+        </form></div>
+      <div style="background-color:rgb(221, 173, 230)">
+            <h1 id="heading">TABLES AND LISTS</h1><br>
+            <table class="center" id="table-1""width:50%">
+            <tr><th>Roll No</th><th>Name</th><th>Course</th><th>Department</th></tr>
+            <tr><td>101</td><td>MEENA</td><td>Computer</td><td>CS</td></tr>
+            <tr><td>102</td><td>KAVITHAA</td><td>Information Technology</td><td>IT</td></tr>
+            <tr><td>103</td><td>DEEPAN</td><td>Mechanics</td><td>ME</td></tr>
+            <tr><td>104</td><td>RENU</td><td>Electronics</td><td>EEE</td></tr>
+            <tr><td>105</td><td>SUBHIKSHA</td><td>artificial intelligence</td><td>AI</td></tr>
+            <tr><td>106</td><td>BOOJANA</td><td>communication</td><td>ECE</td></tr>
+            </table><br>
+            <h2 id="courses">No Of Courses Available</h2>
+            <ul id="list-1"><li>Computer Science</li><li>Electronics</li><li>Aerounetics</li><li>Mechanical</li><li>Artificial Intelligence</li></ul>
+       </div>
+      <div style="background-color:rgb(221, 173, 230)">
+        <h1 id="about-heading">About Page</h1>
+        <p id="description">This institute contains all the above mentioned courses .If there is any issue in registration/login ,please contact the admin."</p>
+      </div>     
+</body>
+</html>

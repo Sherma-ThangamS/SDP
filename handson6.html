@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pages</title>
+</head>
+<body>
+        <style>
+            body{text-align:center;}
+            table, th, td {border: 1px solid black; align:center;}
+            .center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #courseList{display: inline-block;text-align: left;}
+        </style>
+    </head>
+    <body>
+        <div style="background-color:lavender">
+            <h1 id="table-heading">TABLES AND LISTS</h1><br>
+            <table class="center" id="courseTable""width:50%">
+            <tr><th>Roll No</th><th>Name</th><th>Course</th><th>Department</th></tr>
+            <tr><td>101</td><td>SUBHIKSHA</td><td>Computer</td><td>CS</td></tr>
+            <tr><td>102</td><td>KAVITHAA</td><td>Information Technology</td><td>IT</td></tr>
+            <tr><td>103</td><td>BOOJANA</td><td>Mechanics</td><td>ME</td></tr>
+            <tr><td>104</td><td>DEEPAN</td><td>Electronics</td><td>EEE</td></tr>
+            <tr><td>105</td><td>RENU</td><td>artificial intelligence</td><td>AI</td></tr>
+            <tr><td>106</td><td>ANANDHAN</td><td>communication</td><td>ECE</td></tr>
+            </table><br>
+            <h2 id="courseHeading">No Of Courses Available</h2>
+            <ul id="courseList"><li>Computer Science</li><li>Electronics</li><li>Aerounetics</li><li>Mechanical</li><li>Artificial Intelligence</li></ul>
+        </div>
+            
+        <div style="background-color:lavender">
+            <h1 id="imageHeading">Image Map</h1>
+            <img src="https://st2.depositphotos.com/1000956/6405/i/950/depositphotos_64055655-stock-photo-laptop-and-mobile-with-coffee.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+            <map name="workmap">
+              <area shape="rect" coords="34,44,270,350" alt="laptop" href="https://en.wikipedia.org/wiki/Laptop">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Mobile_phone">
+              <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://en.wikipedia.org/wiki/Coffee">
+            </map>
+        </div>
+            
+        <div style="background-color:lavender">
+            <h1>FILL THE FORM</h1>
+            <form id="login-form">
+            <label>Name :</label>
+            <input type="text" id="fname"><br>
+            <label>Password :</label>
+            <input type="text"><br>
+            <label>Email :</label>
+            <input type="text"><br>
+            <label for="courses">Courses :</label>
+            <select name="Courses" id="course">
+              <option value="Computer Science">Computer Science</option>
+              <option value="IT">IT</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="AI">AI</option>
+            </select><br>
+            <label for="Address">Address :</label>
+            <textarea id="Address" name="Address" rows="4" cols="50"></textarea><br>
+            <label for="Country">Country :</label>
+            <input list="Countries" name="Countries" id="Country">
+            <datalist id="Countries">
+              <option value="India">
+              <option value="Sri Lanka">
+              <option value="England">
+              <option value="Germany">
+              <option value="US">
+            </datalist><br>
+            <button id="submit_btn" type="submit" form="login-form" value="Submit">Submit</button>
+            </form>
+        </div>
+            
+        <div style="background-color:lavender">
+            <h1 id="frameHeading">FRAMES IN HTML</h1><br>
+            <iframe id="frameImage1" src="https://en.wikipedia.org/wiki/Main_Page"></iframe>
+            <iframe id="frameImage2" src="https://www.skillrack.com/faces/candidate/codeprogram.xhtml"></iframe>
+        </div> 
+</body>
+</html>
